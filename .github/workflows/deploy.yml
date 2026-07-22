@@ -29,8 +29,7 @@ jobs:
         run: npm install
           
       - name: Build Tailwind CSS
-        run: |
-          npx tailwindcss -i ./input.css -o ./dist/style.css --minify
+        run: npx tailwindcss -i ./input.css -o ./style.css --minify
           
       - name: Setup Pages
         uses: actions/configure-pages@v4
