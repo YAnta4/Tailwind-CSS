@@ -1,15 +1,12 @@
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  // هنا بتحدد للمترجم فين ملفات الـ HTML بتاعتك عشان يراقبها
-  content: [
-    "./*.{html,js}",
-    "./src/**/*.{html,js}"
-  ],
+  content: ["./**/*.html"],
   theme: {
     extend: {
-     
-    },
+      fontFamily: {
+        elms: ['"Elms sans"', 'sans-serif'],
+      }
+    }
   },
   plugins: [],
 }
