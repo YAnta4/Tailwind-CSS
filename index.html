@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youssef portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CONNECT THE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- CONNECT THE ICON LIBRARY -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="h-screen font-elms  grid grid-cols-4 grid-rows-7 gap-5">
+
+    <!-- NAVBAR -->
+    <header class="bg-blue-600 text-white flex justify-between items-center p-3 drop-shadow-xl col-span-full row-span-1">
+        <h1 class="text-4xl"><a href="#">Youssef</a></h1>
+        <nav class="flex gap-5 h-full  max-sm:hidden justify-between items-center">
+                <a href="#" class="hover:bg-slate-700 hover:p-2 hover:rounded-xl transition-all duration-600">home</a>
+                <a href="#" class="hover:bg-slate-700 hover:p-2 hover:rounded-xl transition-all duration-600">products</a>
+                <a href="#" class="hover:bg-slate-700 hover:p-2 hover:rounded-xl transition-all duration-600">about</a>
+                <a href="#" class="hover:bg-slate-700 hover:p-2 hover:rounded-xl transition-all duration-600">contact</a>
+        </nav>
+        <!-- PHONE MENU -->
+        <div class="relative w-10 h-8 hidden  max-sm:flex max-sm:items-center">
+            <div class="absolute w-full bg-white h-1 top-0 rounded-full"></div>
+            <div class="absolute w-full bg-white h-1 rounded-full"></div>
+            <div class="absolute w-full bg-white h-1 bottom-0 rounded-full"></div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="p-5 bg-blue-600  flex items-center justify-center max-sm:flex-col-reverse col-span-3 row-span-5 rounded-tr-2xl rounded-br-2xl">
+        <section class="flex flex-col basis-1/2  gap-7 text-white max-sm:text-center max-sm:items-center">
+            <h2 class="text-2xl">HI, I'm Youssef</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo deserunt blanditiis pariatur esse ipsam eius repellat velit, expedita et ullam consectetur vero ratione adipisci exercitationem nemo perferendis quam rerum voluptatem.</p>
+            <!-- SEE MORE BUTTON -->
+            <button class="border-none  bg-slate-700 w-2/3 px-4 py-2 rounded-2xl text-white hover:scale-105 transition-all active:bg-slate-600 active:scale-95">See more</button>
+         </section>
+         <section class="flex basis-1/2">
+            <img src="./media/opening photo.png" alt="Introduction photo" class="grow h-full">
+        </section>
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside class="col-span-1 row-span-5 bg-blue-600 flex flex-col justify-between items-end box-border p-5 rounded-tl-2xl rounded-bl-2xl max-sm:p-1 max-sm:justify-around">
+        <a href="#" class="bg-white p-3 rounded-2xl flex items-center gap-2 hover:scale-110 transition-transform cursor-pointer">
+            <p class="max-sm:hidden">Facebook</p>
+            <i class="fa-brands fa-facebook text-3xl text-blue-700"></i>
+        </a>
+
+        <a href="#" class="bg-white p-3 rounded-2xl flex items-center gap-2 hover:scale-110 transition-transform cursor-pointer">
+            <p class="max-sm:hidden">GitHub</p>
+            <i class="fa-brands fa-github text-3xl text-black"></i>
+        </a>
+
+        <a href="#" class="bg-white p-3 rounded-2xl flex items-center gap-2 hover:scale-110 transition-transform cursor-pointer">
+            <p class="max-sm:hidden">Youtube</p>
+            <i class="fa-brands fa-youtube text-3xl text-red-500"></i>
+        </a>
+
+        <a href="#" class="bg-white p-3 rounded-2xl flex items-center gap-2 hover:scale-110 transition-transform cursor-pointer">
+            <p class="max-sm:hidden">TikTok</p>
+            <i class="fa-brands fa-tiktok text-3xl text-black"></i>
+        </a>
+    </aside>
+
+    <!-- THE FOOTER -->
+    <footer class="bg-blue-600 col-span-full row-span-1 flex justify-center items-center">
+        <p>All rights reserved &copy; Youssef Antar 2026</p>
+    </footer>
+
+    <!-- FOR PAGE FONT  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        elms: ['"Elms sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
